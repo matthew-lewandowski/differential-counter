@@ -1,0 +1,14 @@
+.btn-diff {
+    margin: 5px;
+}
+.btn-group-vertical{
+    width: 95%;
+    height: 100%;
+}
+.btn-group-vertical>.btn-group {
+    width: 100%;
+    height: 100%;
+}
+.btn {
+    width: 30%;
+}
