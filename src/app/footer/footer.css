@@ -1,0 +1,14 @@
+.footer {
+    height: 5%;
+    width: 95%;
+    justify-content: center;
+    display: inline-flex;
+}
+.footer-button {
+    width: 7% ;
+    margin: 5px;
+}
+.spacer {
+    width: 79%;
+    display: inline-block;
+}

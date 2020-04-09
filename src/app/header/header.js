@@ -1,9 +1,10 @@
 import React from "react";
 import Counter from "./counter";
+import "./header.css"
 
 function Header(props) {
     return (
-        <div>
+        <div className="header">
             <div>
                 <h1>WBC Counter</h1>
             </div>
