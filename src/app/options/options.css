@@ -1,5 +1,6 @@
 .options-header{
     display: flex;
+    border-bottom: 1px solid #dcdcdc;
 }
 .back-button{
     margin: 5px 10px;
@@ -11,4 +12,24 @@
 }
 .options{
     width: 100%;
+    height: 100%;
+}
+.save{
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.save-button{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.threshold-title{
+    margin-top: 15px;
+}
+.alert-threshold{
+    border-bottom: 1px solid #dcdcdc;
 }

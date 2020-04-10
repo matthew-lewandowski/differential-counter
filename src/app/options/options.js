@@ -12,12 +12,12 @@ function Options(props) {
     return (
         <div className="options">
             <div className="options-header">
-                <button className="back-button" onClick={props.back}><FontAwesomeIcon icon={faArrowLeft}/></button>
+                <button className="back-button" onClick={() => props.saveSettings(alertThreshold)}><FontAwesomeIcon icon={faArrowLeft}/></button>
                 <h5 className="options-title">Options</h5>
             </div>
             <div className="alert-threshold">
-                <h5 className="threshold-title">Alert Threshold</h5>
                 <div className="container">
+                    <h5 className="threshold-title">Alert Threshold</h5>
                     <div className="row">
                         <div className="col-sm-12">
                             <form>
@@ -56,7 +56,10 @@ function Options(props) {
                     </div>
                 </div>
             </div>
-            <button type="button" className="btn btn-success" onClick={() => props.saveSettings(alertThreshold)}>Save</button>
+            <div className="save">
+                <button type="button" className="btn btn-success save-button" onClick={() => props.saveSettings(alertThreshold)}>Save</button>
+            </div>
+
         </div>
 )
 }

@@ -109,7 +109,6 @@ function App() {
                 style={customStyles}
             >
                 <Options
-                    back={closeOptions}
                     total={total}
                     saveSettings={threshold => saveOptions(threshold)}
                 />

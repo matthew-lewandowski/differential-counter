@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faUndoAlt, faFileAlt, faFireAlt} from '@fortawesome/free-solid-svg-icons'
+import {faUndoAlt, faFileAlt, faCog} from '@fortawesome/free-solid-svg-icons'
 
 function Footer(props) {
     return (
@@ -11,7 +11,7 @@ function Footer(props) {
             </button>
             <button className="btn footer-button" onClick={() => props.onClick(2)}><FontAwesomeIcon icon={faFileAlt}/>
             </button>
-            <button className="btn footer-button" onClick={() => props.onClick(3)}><FontAwesomeIcon icon={faFireAlt}/>
+            <button className="btn footer-button" onClick={() => props.onClick(3)}><FontAwesomeIcon icon={faCog}/>
             </button>
         </div>
     )
