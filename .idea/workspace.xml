@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54653c40-d52d-45b1-88e4-db0a10825fad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/results/results.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/footer/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/table/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/table/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/footer/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/footer/footer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -72,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586345011530</updated>
-      <workItem from="1586345012715" duration="22228000" />
+      <workItem from="1586345012715" duration="27166000" />
     </task>
     <servers />
   </component>
