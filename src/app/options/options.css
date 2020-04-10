@@ -1,11 +1,14 @@
-.results-header{
+.options-header{
     display: flex;
 }
 .back-button{
     margin: 5px 10px;
     font-size: large;
 }
-.results-title{
+.options-title{
     margin: auto 5px;
     text-align: center;
+}
+.options{
+    width: 100%;
 }

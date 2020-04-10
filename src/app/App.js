@@ -5,8 +5,11 @@ import './App.css';
 import Header from "./header/header";
 import Footer from "./footer/footer";
 import Results from "./results/results";
+import Options from "./options/options";
 
 
+
+Modal.setAppElement('#root');
 const customStyles = {
     content : {
         top                   : '50%',
@@ -21,17 +24,18 @@ const customStyles = {
     }
 };
 
-Modal.setAppElement('#root');
+
 
 
 function App() {
     const [modalIsOpen,setIsOpen] = useState(false);
+    const [optionsOpen, setOptions] = useState(false);
     const [history, setHistory] = useState([{squares: Array(12).fill(0)}]);
+    const [total, setTotal] = useState(100);
     const [stepNumber, setStepNumber] = useState(0);
     const current = history[stepNumber];
     const count = stepNumber - current.squares[0];
     const idsNotToAdd = [0];
-    const TOTAL = 100;
 
     function footerClick(id) {
         if (id === 1){
@@ -43,7 +47,7 @@ function App() {
                 openModal()
             }
         } else {
-
+            openOptions()
         }
     }
     function undo() {
@@ -58,12 +62,12 @@ function App() {
         const current = hist[history.length - 1];
         const squares = current.squares.slice();
 
-        if (count < TOTAL){
+        if (count < total){
             squares[i] = squares[i] + 1;
-        } else if (count <= TOTAL && idsNotToAdd.includes(i)){
+        } else if (count <= total && idsNotToAdd.includes(i)){
             squares[i] = squares[i] + 1;
         } else {
-            alert(`${TOTAL} Counted!`);
+            alert(`${total} Counted!`);
             return
         }
         setHistory(history.concat([{squares: squares}]));
@@ -75,8 +79,15 @@ function App() {
     function openModal() {
         setIsOpen(true);
     }
-    function afterOpenModal() {
-
+    function closeOptions(){
+        setOptions(false)
+    }
+    function openOptions() {
+        setOptions(true)
+    }
+    function saveOptions(threshold) {
+        setTotal(threshold);
+        closeOptions();
     }
 
     return (
@@ -84,7 +95,6 @@ function App() {
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
-                onAfterOpen={afterOpenModal}
                 style={customStyles}
             >
                 <Results
@@ -93,9 +103,20 @@ function App() {
                     count={count}
                 />
             </Modal>
+            <Modal
+                isOpen={optionsOpen}
+                onRequestClose={closeOptions}
+                style={customStyles}
+            >
+                <Options
+                    back={closeOptions}
+                    total={total}
+                    saveSettings={threshold => saveOptions(threshold)}
+                />
+            </Modal>
             <Header
                 count={count}
-                total={TOTAL}
+                total={total}
             />
             <Footer
                 onClick={id => footerClick(id)}
