@@ -10,6 +10,7 @@ function Header(props) {
             </div>
             <Counter
                 count={props.count}
+                total={props.total}
             />
         </div>
     )

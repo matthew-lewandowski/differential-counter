@@ -1,6 +1,10 @@
 .btn-diff {
     margin: 5px;
     width: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.10) !important;
+    border-radius: 5px !important;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+    touch-action: manipulation;
 }
 .btn-group-vertical{
     width: 95%;
