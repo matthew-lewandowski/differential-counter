@@ -4,14 +4,9 @@
     <list default="true" id="54653c40-d52d-45b1-88e4-db0a10825fad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/footer/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/footer/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/footer/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/header/counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/header/counter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/table/square.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/table/square.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/table/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/table/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/table/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/table/table.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586345011530</updated>
-      <workItem from="1586345012715" duration="20154000" />
+      <workItem from="1586345012715" duration="22228000" />
     </task>
     <servers />
   </component>

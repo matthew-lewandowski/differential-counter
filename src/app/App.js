@@ -25,6 +25,7 @@ function App() {
     function undo() {
         if (stepNumber >= 1){
             setStepNumber(stepNumber - 1);
+            setHistory(history.slice(0, stepNumber));
         }
     }
 
