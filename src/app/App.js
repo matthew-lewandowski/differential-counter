@@ -6,6 +6,7 @@ import Header from "./header/header";
 import Footer from "./footer/footer";
 import Results from "./results/results";
 
+
 const customStyles = {
     content : {
         top                   : '50%',
@@ -13,7 +14,10 @@ const customStyles = {
         right                 : 'auto',
         bottom                : 'auto',
         marginRight           : '-50%',
-        transform             : 'translate(-50%, -50%)'
+        height                : '100%',
+        width                 : '100%',
+        transform             : 'translate(-50%, -50%)',
+        padding               : '0'
     }
 };
 
@@ -82,7 +86,6 @@ function App() {
                 onRequestClose={closeModal}
                 onAfterOpen={afterOpenModal}
                 style={customStyles}
-                contentLabel="Example Modal"
             >
                 <Results
                     onClick={closeModal}

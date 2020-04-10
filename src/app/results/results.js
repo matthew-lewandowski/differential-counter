@@ -1,13 +1,18 @@
 import React from "react";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faArrowLeft} from '@fortawesome/free-solid-svg-icons';
+import "./results.css";
 
 function Results(props) {
     const squares = props.squares;
     const count = props.count;
-    console.log(squares);
-    console.log(count);
     return (
         <div className="results">
-            <button onClick={props.onClick}>Close modal</button>
+            <div className="results-header">
+                <button className="back-button" onClick={props.onClick}><FontAwesomeIcon icon={faArrowLeft}/></button>
+                <h5 className="results-title">Differential Count</h5>
+            </div>
+
             <table className="table table-striped">
                 <thead>
                 <tr>
